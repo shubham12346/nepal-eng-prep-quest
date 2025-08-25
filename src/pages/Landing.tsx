@@ -1,4 +1,4 @@
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -9,9 +9,9 @@ import heroImage from '@/assets/hero-image.jpg';
 import { QUIZ_SUBJECTS } from '@/utils/constants';
 
 export const Landing: React.FC = () => {
+  const navigate = useNavigate();
   const handleStartQuiz = () => {
-    // TODO: Navigate to quiz or implement quiz start logic
-    console.log('Starting quiz...');
+    navigate('/quiz');
   };
 
   const features = [

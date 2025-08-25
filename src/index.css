@@ -53,6 +53,10 @@
     --premium-foreground: 0 0% 100%;
     
     /* Quiz Specific Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 355 100% 97%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 48 96% 89%;
     --correct: 142 76% 36%;
     --incorrect: 0 84% 60%;
     --neutral: 215 16% 47%;
