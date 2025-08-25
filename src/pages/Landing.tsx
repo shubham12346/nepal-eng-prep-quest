@@ -81,8 +81,12 @@ export const Landing: React.FC = () => {
                   Start Free Practice
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline" size="lg">
-                  View Question Bank
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  onClick={() => navigate('/pricing')}
+                >
+                  View Premium Plans
                 </Button>
               </div>
 
@@ -196,6 +200,7 @@ export const Landing: React.FC = () => {
                 size="lg" 
                 variant="outline"
                 className="border-white text-white hover:bg-white/10"
+                onClick={() => navigate('/pricing')}
               >
                 View Premium Features
               </Button>
